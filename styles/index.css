@@ -1,0 +1,193 @@
+
+/* All css belove are the standard whenever creating a new project. We reset everything to a state where it 
+lets us customize oure upcoming elements easier */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+* {
+  box-sizing: border-box;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme("borderColor.DEFAULT", currentColor);
+}
+
+
+/* ^^^^^^^^^^^^^^^^^^ */
+/* All css above are the standard whenever creating a new project. We reset everything to a state where it 
+lets us customize oure upcoming elements easier */
+
+.logo {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background-color: rgba(231, 229, 229, 0.919);
+  padding: 1rem 2rem;
+  min-height: 5rem;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: calc(100svh - 5rem);
+  background-color: rgb(22, 51, 22);
+  background-image: url("/images/school.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position-y: -10rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0 4rem 0;
+  gap: 4rem;
+}
+
+
+.sections {
+  display: flex;
+  gap: 2rem;
+  flex-grow: 1;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navoption {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition-property: all;
+  transition: ease-in-out 0.25s;
+}
+.navoption:hover {
+  background: rgb(85, 187, 85);
+  color: white;
+  transition-property: all;
+  transition: ease-in-out 0.25s;
+}
+
+.btn {
+  margin: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  padding: 0.6em 1.2em;
+  background-color: lightgreen;
+  color: #000000;
+  box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #36773c;
+  color: #ffffff;
+  box-shadow: 0 8px 24px 0 black;
+}
+.paragraph {
+  min-height: 15rem;
+  max-width: 50%;
+  background: wheat;
+  border-radius: 2rem;
+  padding: 2rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  overflow-y: scroll;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
